@@ -3,8 +3,7 @@ class MessagesController < ApplicationController
 
   def create
     channel.messages.create(messages_params.merge(author: "unknown"))
-
-    redirect_to channel
+    render partial: "messages/form"
   end
 
   private
