@@ -95,6 +95,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
+    pg (1.2.3)
     propshaft (0.4.4)
       actionpack (>= 7.0.0.alpha2)
       activesupport (>= 7.0.0.alpha2)
@@ -136,7 +137,6 @@ GEM
     redis (4.5.1)
     reline (0.3.0)
       io-console (~> 0.5)
-    sqlite3 (1.4.2)
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.2-x86_64-darwin)
@@ -167,11 +167,11 @@ DEPENDENCIES
   bootsnap
   debug
   importmap-rails
+  pg (~> 1.1)
   propshaft
   puma (~> 5.0)
   rails (~> 7.0.0)
   redis (~> 4.0)
-  sqlite3 (~> 1.4)
   stimulus-rails
   tailwindcss-rails
   turbo-rails
